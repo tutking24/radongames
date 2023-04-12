@@ -12,21 +12,12 @@ export default function Index(): JSX.Element {
     VanillaTilt.init(elm);
   }
 
-  onMount(() => {
-    const ads = document.createElement("script");
-    ads.async = true;
-    ads.crossOrigin = "anonymous";
-    ads.src =
-      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8517735295733237";
-    document.head.appendChild(ads);
-  });
-
   return (
     <main>
       <section class="w-full h-[calc(100vh-64px)] flex flex-col gap-10 items-center justify-center px-8 sm:px-16 md:px-20 lg:px-32">
         <img src={banner} alt="Radon Games" />
         <p class="text-center">
-          An open-source unblocked games website built with simplicity in mind.
+         The only website you'll ever need!
         </p>
         <Button text="Start Playing!" href="/games" icon="fa-gamepad-modern" />
         <Ad />
